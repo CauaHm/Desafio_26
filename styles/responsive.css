@@ -1,0 +1,165 @@
+
+:root {
+    --red-primary: #EC0833;
+    --red-secundary: #B00525;
+    --success: #590313;
+    --waring: #D9D9D9;
+    --black: #000000;
+    --white: #FFFFFF;
+    --neutrals: #374957;
+    --bg: #454545;
+}
+
+@media screen and (max-width: 768px) {
+    .btn_icon_header {
+        display: block;
+    }
+
+    .header-box {
+        justify-content: start;
+        align-items: center;
+        gap: 15%;
+        min-width: 518px;
+        margin: 10px;
+    }
+
+
+    .header_list {
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        width: 35%;
+        padding: .6em;
+        animation-duration: 1s;
+        margin-left: -100vw;
+        background: white;
+        color: white;
+    }
+
+    .titulo_invisivel {
+        display: block;
+    }
+
+    .header_span {
+        display: none;
+    }
+
+    main {
+        padding: 0;
+        margin: 0;
+    }
+
+    .main {
+        margin: 10% 0;
+        padding: 0;
+    }
+
+  .searching {
+    width: 100%;
+    height: 100%;
+  }
+
+    .searching_form {
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lupa_search {
+        display: none;
+    }
+
+    .section_itens {
+        width: 100%;
+        border: none;
+    }
+
+    .section_itens:hover {
+        border: none;
+        width: 100%;
+        height: 300px;
+        padding: 0;
+    }
+    
+    .cat_container {
+        flex-direction: column;
+    }
+
+  .bp_item {
+    margin: 1rem 1rem;
+  }
+
+    .destaque {
+        font-size: 2rem;
+        margin: 2rem 0;
+    }
+
+    .bs_box {
+        flex-direction: column;
+    }
+
+    .destaque_box {
+        flex-direction: column;
+    }
+    
+
+    .news_notice {
+        flex-direction: column;
+    }
+
+    .news_notice img {
+        width: 100%;
+    }
+
+    .grid2 {
+        display: none;
+    }
+
+    .grid3 {
+        display: none;
+    }
+    
+    .catalogo_box {
+        grid-template-columns: 1fr;
+    }
+
+    .catalogo_destaque img  {
+        width: 100%;
+        height: 100%;
+    }
+
+    .painel_adm  {
+        margin: 0;
+        padding: 0;
+    }
+
+    .leads_container {
+        flex-direction: column;
+    }    
+    .adm_periodos {
+       flex-direction: column;
+       padding: 10px;
+    }
+
+    .graph_container {
+        height: 200px;
+        width: 100%;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .inv {
+        display: block;
+    }
+
+}
+
+@keyframes showSidebar1 {
+    from {margin-left: -100vw;}
+    top {margin-left: -10vw;}
+}

@@ -1,0 +1,175 @@
+
+:root {
+    --red-primary: #EC0833;
+    --red-secundary: #B00525;
+    --success: #590313;
+    --waring: #D9D9D9;
+    --black: #000000;
+    --white: #FFFFFF;
+    --neutrals: #374957;
+    --bg: #454545;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.body_adm {
+    display: flex;
+}
+
+.header_lateral {
+    background-color: #C10226;
+    width: 100px;
+    height: 200%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 30px;
+}
+
+.header_lateral-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.header_lateral-list li img {
+    width: 60px;
+    padding: 15px;
+}
+
+.header_lateral-list li:hover {
+    background-color: var(--red-primary);
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.painel_adm {
+    background-color: #DEDEDE;
+    width: 100%;
+    padding: 1rem;
+}
+
+.h1_adm {
+    font-size: 2em;
+    color: var(--black);
+}
+
+.leads_container {
+    margin-top: 3rem;
+    display: flex;
+    gap: 4rem;
+}
+
+.leads {
+    width: 300px;
+    border: solid gray 1px;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
+    font-weight: 700;
+
+}
+
+.leads p {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.leads p img {
+    width: 40px;
+}
+
+.leads1 {
+    background-color: red;
+    color: var(--white);
+    font-size: 1.3em;
+}
+
+.leads2 {
+    display: flex;
+    height: 100px;
+    color: var(--black);
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 0px 0px 15px 15px;
+}
+
+.leads_destaque {
+    color: #374957;
+}
+
+.adm_periodos {
+    width: 100%;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size: 1.3em;
+    gap: 25px;
+}
+
+.periodo {
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+}
+
+.periodo p {
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.periodo p:hover {
+    color: var(--white);
+    background-color: gray;
+    transition: .2s;
+}
+
+.graph_container {
+    display: flex;
+    gap: 20px;
+}
+
+.graph_card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    width: 50%;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 15px;
+    height: 600px;
+    font-size: 1.5em;
+    gap: 20px;
+}
+
+.graph_info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 700;
+}
+
+.graph_info h1 {
+    color: #989FA6;
+}
+
+.graph_info p {
+    color: #F4002C;
+}
+
+.graph_img img {
+    width: 100%;
+}

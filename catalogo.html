@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/modelo.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Catalogo</title>
+</head>
+<body>
+    <header class="header">
+
+        <div class="header-box" id="header">
+            <button class="btn_icon_header" onclick="chamarSidebar()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+            </button>
+            <a href="index.html">
+                <span class="header_span"><img src="img/Logo.svg" alt="Logo da desafio 26">
+                    <h1>Desafio 26</h1>
+                </span>
+            </a>
+            <ul class="header_list" id="header_list">
+                <button class="btn_icon_header" onclick="chamarSidebar()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                    </svg>
+                </button>
+                <li class="header_list-item">
+                    <a class="active" href="#inicio">Inicio</a>
+                </li>
+                <li class="header_list-item">
+                    <a target="_blank" class="active" href="catalogo.html">Catalogo</a>
+                </li>
+                <li class="header_list-item">
+                    <a class="active" href="painelAdm.html">CRM</a>
+                </li>
+                <li class="header_list-item">
+                    <a class="active" href="login.html">Entrar</a>
+                </li>
+            </ul>
+            <h1 class="titulo_invisivel">Desafio 26</h1>
+        </div>
+    </header>
+    <main>
+        <section class="section_modelo">
+            <div class="modelo_box">
+                <div class="modelo_filtro">
+                    <button onclick="menuMarca()" class="modelo_filtro-btn">Marca <img src="img/seta_baixo.png" alt="Imagem de uma seta para baixo"></button>
+                    <ul class="modelo_filtro-list m1">
+                        <li class="modelo_filtro-list-item">Ford Ranger</li>
+                        <li class="modelo_filtro-list-item">Ford Ranger</li>
+                        <li class="modelo_filtro-list-item">Ford Ranger</li>
+                    </ul>
+                </div>
+                <div class="modelo_filtro">
+                    <button onclick="menuModelo()" class="modelo_filtro-btn">Modelo <img src="img/seta_baixo.png" alt="Imagem de uma seta para baixo"></button>
+                    <ul class="modelo_filtro-list m2">
+                        <li class="modelo_filtro-list-item">Ford Ranger</li>
+                        <li class="modelo_filtro-list-item">Ford Ranger</li>
+                        <li class="modelo_filtro-list-item">Ford Ranger</li>
+                    </ul>
+                </div>
+                <div class="modelo_filtro">
+                    <button onclick="menuTipo()" class="modelo_filtro-btn">Tipo <img src="img/seta_baixo.png" alt="Imagem de uma seta para baixo"></button>
+                    <ul class="modelo_filtro-list m3">
+                        <li class="modelo_filtro-list-item">Ford Ranger</li>
+                        <li class="modelo_filtro-list-item">Ford Ranger</li>
+                        <li class="modelo_filtro-list-item">Ford Ranger</li>
+                    </ul>
+                </div>
+                <div class="modelo_filtro">
+                    <button class="modelo_filtro-btn">Min preço</button>
+                </div>
+                <div class="modelo_filtro">
+                    <button class="modelo_filtro-btn">Max preço</button>
+                </div>
+                <div class="modelo_filtro">
+                    <button class="modelo_filtro-btn">Quilometragem</button>
+                </div>
+                <div class="modelo_filtro">
+                    <button onclick="menuTipoComb()" class="modelo_filtro-btn">Tipo de combustivel <img src="img/seta_baixo.png" alt="Imagem de uma seta para baixo"></button>
+                    <ul class="modelo_filtro-list m4">
+                        <li class="modelo_filtro-list-item">Ford Ranger</li>
+                        <li class="modelo_filtro-list-item">Ford Ranger</li>
+                        <li class="modelo_filtro-list-item">Ford Ranger</li>
+                    </ul>
+                </div>
+                <div class="modelo_filtro">
+                    <button onclick="menuBlindado()" class="modelo_filtro-btn">Blindado <img src="img/seta_baixo.png" alt="Imagem de uma seta para baixo"></button>
+                    <ul class="modelo_filtro-list m5">
+                        <li class="modelo_filtro-list-item">Ford Ranger</li>
+                        <li class="modelo_filtro-list-item">Ford Ranger</li>
+                        <li class="modelo_filtro-list-item">Ford Ranger</li>
+                    </ul>
+                </div>
+                <div class="modelo_filtro">
+                    <button onclick="menuCor()" class="modelo_filtro-btn">Cor <img src="img/seta_baixo.png" alt="Imagem de uma seta para baixo"></button>
+                    <ul class="modelo_filtro-list m6">
+                        <li class="modelo_filtro-list-item">Ford Ranger</li>
+                        <li class="modelo_filtro-list-item">Ford Ranger</li>
+                        <li class="modelo_filtro-list-item">Ford Ranger</li>
+                    </ul>
+                </div>
+                <div class="modelo_filtro">
+                    <button onclick="menuPortas()" class="modelo_filtro-btn">Portas <img src="img/seta_baixo.png" alt="Imagem de uma seta para baixo"></button>
+                    <ul class="modelo_filtro-list m7">
+                        <li class="modelo_filtro-list-item">Ford Ranger</li>
+                        <li class="modelo_filtro-list-item">Ford Ranger</li>
+                        <li class="modelo_filtro-list-item">Ford Ranger</li>
+                    </ul>
+                </div>
+            </div>
+           <a href="catalogo.html">Limpar tudo</a>
+        </section>
+        <section class="section_catalogo">
+            <div class="catalogo_header">
+                <ul class="catalogo_list">
+                    <li class="catalogo_list-item">Todos (60)</li>
+                    <li class="catalogo_list-item">Novos (30)</li>
+                    <li class="catalogo_list-item">Usados (30)</li>
+                </ul>
+                <input class="catalogo_btn" type="text" name="" id="" placeholder="Marcas, Modelos">
+            </div>
+            <div class="catalogo_container">
+                <h1>60 resultados</h1>
+                <div class="catalogo_box">
+                    <div class="catalogo_destaque">
+                        <img src="img/jagua.png" alt="carro jaguar f-type 2.0 p300">
+                        <div class="destaque_card-modelo">
+                            <p>JAGUAR F-TYPE 2.0 P300</p>
+                        </div>
+                        <div class="destaque_card-info">
+                            <p>2024</p>
+                            <p>R$579.00</p>
+                        </div>
+                    </div>
+                    <div class="catalogo_destaque">
+                        <img src="img/ford.png" alt="carro jaguar f-type 2.0 p300">
+                        <div class="destaque_card-modelo">
+                            <p>FORD RANGER XLT</p>
+                        </div>
+                        <div class="destaque_card-info">
+                            <p>2023</p>
+                            <p>R$499.00</p>
+                        </div>
+                    </div>
+                    <div class="catalogo_destaque">
+                        <img src="img/land.png" alt="carro jaguar f-type 2.0 p300">
+                        <div class="destaque_card-modelo">
+                            <p>LAND ROVER VELAR</p>
+                        </div>
+                        <div class="destaque_card-info">
+                            <p>2019</p>
+                            <p>R$399.00</p>
+                        </div>
+                    </div>
+                    <div class="catalogo_destaque">
+                        <img src="img/bmwii.png" alt="carro jaguar f-type 2.0 p300">
+                        <div class="destaque_card-modelo">
+                            <p>BMW M235i 2.0</p>
+                        </div>
+                        <div class="destaque_card-info">
+                            <p>2021</p>
+                            <p>R$319.00</p>
+                        </div>
+                    </div>
+                    <div class="catalogo_destaque">
+                        <img src="img/audi.png" alt="carro jaguar f-type 2.0 p300">
+                        <div class="destaque_card-modelo">
+                            <p>AUDI Q8 3.0 TFS</p>
+                        </div>
+                        <div class="destaque_card-info">
+                            <p>2020</p>
+                            <p>R$479.00</p>
+                        </div>
+                    </div>
+                    <div class="catalogo_destaque">
+                        <img src="img/shellby.png" alt="carro jaguar f-type 2.0 p300">
+                        <div class="destaque_card-modelo">
+                            <p>FORD MUSTANG 5.4 SHELBY</p>
+                        </div>
+                        <div class="destaque_card-info">
+                            <p>2010</p>
+                            <p>R$540.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+    </main>
+    </div>
+    <footer class="rodape">
+        <div class="grid1 grid">
+            <span class="footer_span">
+                <img class="logo_footer" src="img/Logo.svg" alt="">
+                <h2>Desafio 26</h2>
+            </span>
+            <div class="social-container">
+                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="grid2 grid">
+            <h2>Link</h2>
+            <p>Home</p>
+            <p>Preços</p>
+            <p>Sobre</p>
+            <p>Serviços</p>
+        </div>
+        <div class="grid3 grid">
+            <h2>Suporte</h2>
+            <p>FAQ</p>
+            <p>Como funciona</p>
+            <p>Características</p>
+            <p>Comunicando</p>
+        </div>
+        <div class="grid4 grid">
+            <h2>Nos contate</h2>
+            <p>+XX (XX)XXXXX-XXXX</p>
+            <p>desafio26@xxxxx.com</p>
+            <p>Brasil</p>
+        </div>
+
+    </footer>
+    <div class="grid5 grid">&#169;<p>Desafio 26</p>
+    </div>
+    <script src="js/modelo.js"></script>
+</body>
+</html>
