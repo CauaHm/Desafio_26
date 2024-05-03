@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 26</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <span id="inicio"></span>
+    <header class="header">
+
+        <div class="header-box" id="header">
+            <button class="btn_icon_header" onclick="chamarSidebar()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+            </button>
+            <a href="index.html">
+                <span class="header_span"><img src="img/Logo.svg" alt="Logo da desafio 26">
+                    <h1>Desafio 26</h1>
+                </span>
+            </a>
+            <ul class="header_list" id="header_list">
+                <button class="btn_icon_header" onclick="chamarSidebar()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                    </svg>
+                </button>   
+                <li class="header_list-item">
+                    <a class="active inv" href="Mobile.html">Entrar</a>
+                </li>
+                <li class="header_list-item">
+                    <a target="_blank" class="active" href="catalogo.html">Catalogo</a>
+                </li>
+                <li class="header_list-item">
+                    <a class="active" href="painelAdm.html">CRM</a>
+                </li>
+               
+                <li class="header_list-item">
+                    <a class="active pc" href="login.html">Entrar</a>
+                </li>
+            </ul>
+            <h1 class="titulo_invisivel">Desafio 26</h1>
+        </div>
+    </header>
+    <main class="main_index">
+
+        <section>
+            <img class="banner" src="img/blake-meyer-CRNbHjNaljo-unsplash.jpg" alt="banner de um carro">
+        </section>
+        <section class="searching">
+            <h1 class="titles">Modelos</h1>
+            <form class="searching_form" action="get">
+                <div class="searching_form-box">
+                    <div class="lupa_search">
+                        <i class="bi bi-search"></i>
+                    </div>
+                    <div class="search_bar">
+                        <input type="text" name="ser" id="ser" placeholder="Marcas, Modelos...">
+                    </div>
+                </div>
+                <div class="btn_close">
+                    <a class="searching_button" href="catalogo.html">Ver modelos</a>
+                </div>
+            </form>
+        </section>
+
+        <span id="marcas"></span>
+        <section class="brands main">
+            <span class="main_span">
+                <h1 class="h1edit titles">Marcas</h1>
+            </span>
+            <div class="cards">
+                <a href="catalogo.html">
+                    <div class="card_item">
+                        <img class="brands_cards" src="9cdcb3ce1f2d094f48e391e74d44105e-removebg-preview.png" alt="Ford">
+                        <p>Ford</p>
+                    </div>
+                </a>
+                <a href="catalogo.html">
+                    <div class="card_item">
+                        <img class="brands_cards" src="toyota.png" alt="">
+                        <p>Toyota</p>
+                    </div>
+                </a>
+                <a href="catalogo.html">
+                    <div class="card_item">
+                        <img class="brands_cards" src="honda.png" alt="Honda">
+                        <p>Honda</p>
+                    </div>
+                </a>
+                <a href="catalogo.html">
+                    <div class="card_item">
+                        <img class="brands_cards" src="tesla.png" alt="Tesla">
+                        <p>Tesla</p>
+                    </div>
+                </a>
+                <a href="catalogo.html">
+                    <div class="card_item">
+                        <img class="brands_cards" src="Land.png" alt="Land Hover">
+                        <p>Land Hover</p>
+                    </div>
+                </a>
+                <a href="catalogo.html">
+                    <div class="card_item">
+                        <img class="brands_cards" src="gm.png" alt="gm">
+                        <p>GM</p>
+                    </div>
+                </a>
+                <a href="catalogo.html">
+                    <div class="card_item">
+                        <img class="brands_cards" src="renault.png" alt="Renault">
+                        <p>Renault</p>
+                    </div>
+                </a>
+
+
+        </section>
+        <section class="categories main">
+            <span class="main_span">
+                <h1 class="h1edit titles">Categorias</h1>
+            </span>
+            <div class="cat_container">
+                <a href="catalogo.html">
+                    <div class="categories_cards cards">
+                        <div class="cat cat1">
+                            <p>Hatches</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="catalogo.html">
+                    <div class="categories_cards cards">
+                        <div class="cat cat2">
+                            <p>Picapes</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="catalogo.html">
+                    <div class="categories_cards cards">
+                        <div class="cat cat3">
+                            <p>Sedans</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="catalogo.html">
+                    <div class="categories_cards cards">
+                        <div class="cat cat4">
+                            <p>SUVs</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <span id="melhores_precos"></span>
+        <section class="best_prices main">
+            <span class="main_span">
+                <h1 class="h1edit titles">Melhores preços</h1>
+            </span>
+            <div class="cards">
+                <div class="bp_item section_itens">
+                    <a href="catalogo.html" target="_blank">
+                        <div class="card_style">
+                            <span class="destaque">Ford Maverick</span>
+                            <div class="categories_item section_itens">
+                                <img src="img/fordma.jpg" alt="">
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="bp_item section_itens">
+                    <a href="https://www.toyota.com.br/modelos/yaris-seda" target="_blank">
+                        <div class="card_style">
+                            <span class="destaque">Yaris Sedã</span>
+                            <div class="categories_item section_itens">
+                                <img src="img/yaris.webp" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="bp_item section_itens">
+                    <a href="catalogo.html" target="_blank">
+                        <div class="card_style">
+                            <span class="destaque">Honda
+                                Hatchback</span>
+                            <div class="categories_item section_itens">
+                                <img src="img/Honda-City-Hatch_20.jpg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="bp_item section_itens">
+                    <a href="catalogo.html"
+                        target="_blank">
+                        <div class="card_style">
+                            <span class="destaque">BMW X1 (U11)</span>
+                            <div class="categories_item section_itens">
+                                <img src="img/bmw.jpg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <span id="bs_car"></span>
+        <section class="main bs_car">
+            <span class="main_span">
+                <h1 class="h1edit titles">Melhores carros</h1>
+            </span>
+            <div class="bs_box">
+                <a href="catalogo.html">
+                    <div class="bs_card">
+                        <h2>Honda</h2>
+                        <p>FIT</p>
+                        <img src="img/image 5.png" alt="">
+                    </div>
+                </a>
+
+                <a href="catalogo.html">
+                    <div class="bs_card">
+                        <h2>Toyota</h2>
+                        <p>Corolla</p>
+                        <img src="img/image 6.png" alt="">
+                    </div>
+                </a>
+
+                <a href="catalogo.html">
+                    <div class="bs_card">
+                        <h2>Volkswagen</h2>
+                        <p>Gol</p>
+                        <img src="img/image 7.png" alt="">
+                    </div>
+                </a>
+
+                <a href="catalogo.html">
+                    <div class="bs_card">
+                        <h2>Volkswagen</h2>
+                        <p>Jetta</p>
+                        <img src="img/image 8.png" alt="">
+                    </div>
+                </a>
+            </div>
+        </section>
+        <span id="destaques"></span>
+        <section class="main destaques">
+            <span class="main_span">
+                <h1 class="h1edit titles">Destaques</h1>
+            </span>
+            <div class="destaque_box">
+                <a href="catalogo.html">
+                    <div class="destaques_card">
+                        <img src="img/jagua.png" alt="carro jaguar f-type 2.0 p300">
+                        <div class="destaque_card-modelo">
+                            <p>JAGUAR F-TYPE 2.0 P300</p>
+                        </div>
+                        <div class="destaque_card-info">
+                            <p>2024</p>
+                            <p>R$579.00</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="catalogo.html">
+                    <div class="destaques_card">
+                        <img src="img/ford.png" alt="carro ford ranger xlt">
+                        <div class="destaque_card-modelo">
+                            <p>FORD RANGER XLT</p>
+                        </div>
+                        <div class="destaque_card-info">
+                            <p>2024</p>
+                            <p>R$499.00</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="catalogo.html">
+                    <div class="destaques_card">
+                        <img src="img/land.png" alt="Carro land rover velar">
+                        <div class="destaque_card-modelo">
+                            <p>LAND ROVER VELAR</p>
+                        </div>
+                        <div class="destaque_card-info">
+                            <p>2019</p>
+                            <p>R$399.00</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <span id="novidades"></span>
+        <section class="news">
+            <span class="main_span">
+                <h1 class="h1edit titles">Novidades</h1>
+            </span>
+            <div class="news_notice">
+                <img src="img/byd-denza-z9-gt.webp" alt="">
+                <div class="news_info">
+                    <h2>Por Jason Vogel</h2>
+                    <h1>Perua elétrica de 965 cv é o novo carro topo de linha da BYD</h1>
+                    <p>Denza Z9 GT resgata carroceria clássica e ainda entrega muita performace</p>
+                    <a class="btn_news" target="_blank"
+                        href="https://motor1.uol.com.br/news/717490/perua-eletrica-topo-linha-byd/">Saiba mais</a>
+
+                </div>
+        </section>
+        <footer class="rodape">
+            <div class="grid1 grid">
+                <span class="footer_span">
+                    <img class="logo_footer" src="img/Logo.svg" alt="">
+                    <h2>Desafio 26</h2>
+                </span>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="grid2 grid">
+                <h2>Link</h2>
+                <p>Home</p>
+                <p>Preços</p>
+                <p>Sobre</p>
+                <p>Serviços</p>
+            </div>
+            <div class="grid3 grid">
+                <h2>Suporte</h2>
+                <p>FAQ</p>
+                <p>Como funciona</p>
+                <p>Características</p>
+                <p>Comunicando</p>
+            </div>
+            <div class="grid4 grid">
+                <h2>Nos contate</h2>
+                <p>+XX (XX)XXXXX-XXXX</p>
+                <p>desafio26@xxxxx.com</p>
+                <p>Brasil</p>
+            </div>
+
+        </footer>
+        <div class="grid5 grid">&#169;<p>Desafio 26</p>
+        </div>
+    </main>
+    <script src="./js/java.js"></script>
+    <script>
+        alert('Enviamos todos as informações de orçamento para seu E-mail!')
+    </script>
+</body>
+
+</html>

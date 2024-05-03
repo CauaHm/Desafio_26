@@ -23,6 +23,7 @@ body {
 .compra_container {
     margin: 1rem 2rem;
     border: 1px solid white;
+    background-color: var(--white);
 }
 
 .compra_box {
@@ -52,6 +53,63 @@ body {
 
 .compra_img img {
     width: 80% ;
+}
+
+.resume {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 100;
+    padding: 20px;
+}
+
+.acess {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 1.3em;
+}
+
+.aspan {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.acess span {
+    display: flex;
+    gap: 10px;
+}
+
+.caracteristicas_prin {
+    padding: 20px;
+    font-size: 1.3em;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.orcamento {
+    width: 100%;
+    background-color:#374F62;
+    color: var(--white);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.orcamento a{
+    color: var(--red-primary);
+    padding: 20px;
+    margin-right: 3rem;
+    font-size: 1.3em;
+    background-color: var(--white);
+    border-radius: 30px;
+    font-weight: 700;
+}
+.orcamento a:hover {
+    padding: 20px 25px;
+    transition: .3s;
 }
 
 

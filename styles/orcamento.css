@@ -1,0 +1,96 @@
+:root {
+    --red-primary: #EC0833;
+    --red-secundary: #B00525;
+    --success: #590313;
+    --waring: #D9D9D9;
+    --black: #000000;
+    --white: #FFFFFF;
+    --neutrals: #374957;
+
+}
+
+*  {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.form_contariner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.form_orc {
+    width: 90%;
+    height: 90%;
+    background-color: var(--white);
+    display: flex;
+    justify-content: start;
+    font-size: 2.5em;
+    padding: 20px;
+    box-shadow: 2px 2px 10px black;
+}
+
+.for1 {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    font-size: .6em;
+    margin: 10px 0;
+}
+
+.namesobr{
+    display: flex;
+    flex-direction: column;
+}
+
+.namesobr input {
+    padding: 10px;
+    width: 300px;
+}
+
+.sobre h2 {
+    font-size: 1em;
+}
+
+.cep {
+    font-size: 1em;
+}
+
+.cep input {
+    padding: 10px;
+    width: 300px;
+}
+
+.check input {
+    width: 10px;
+}
+
+.termo {
+    font-size: .6em;
+}
+
+.submit {
+    padding: 10px;
+    background-color: var(--red-primary);
+    color: var(--white);
+    border: 1px solid var(--black);
+    width: 100px;
+    font-size: .5em;
+}
+
+.submit:hover {
+    width: 110px;
+    background-color: var(--white);
+    color: var(--red-primary);
+    transition: .3s;
+}
