@@ -1,0 +1,57 @@
+z:root {
+    --red-primary: #EC0833;
+    --red-secundary: #B00525;
+    --success: #590313;
+    --waring: #D9D9D9;
+    --black: #000000;
+    --white: #FFFFFF;
+    --neutrals: #374957;
+
+}
+
+*  {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.compra_container {
+    margin: 1rem 2rem;
+    border: 1px solid white;
+}
+
+.compra_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.compra_box-info {
+    width: 50%;
+}
+
+
+.compra_info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-size: 1.3em;
+    gap: 10px;
+}
+
+.compra_box-img {
+    width: 80%;
+}
+
+.compra_img img {
+    width: 80% ;
+}
+
+
