@@ -41,6 +41,7 @@ body {
     min-width: 800px;
     min-height: 60px;
     box-shadow: 1px 1px 4px var(--black);
+    position: fixed;
 }
 .btn_icon_header {
     background-color: transparent;
