@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio26</title>
+    <link rel="stylesheet" href="./styles/landrover.css">
+    
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="header-box" id="header">
+            <button class="btn_icon_header" onclick="chamarSidebar()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+            </button>
+            <a href="index.html">
+                <span class="header_span"><img src="img/Logo.svg" alt="Logo da desafio 26">
+                    <h1>Desafio 26</h1>
+                </span>
+            </a>
+            <ul class="header_list" id="header_list">
+                <button class="btn_icon_header" onclick="chamarSidebar()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                    </svg>
+                </button>
+                <li class="header_list-item">
+                    <a class="active inv" href="paginas/Mobile.html">Entrar</a>
+                </li>
+                <li class="header_list-item">
+                    <a target="_blank" class="active" href="paginas/catalogo.html">Catalogo</a>
+                </li>
+                <li class="header_list-item">
+                    <a class="active" href="paginas/painelAdm.html">CRM</a>
+                </li>
+
+                <li class="header_list-item">
+                    <a class="active pc" href="paginas/login.html">Entrar</a>
+                </li>
+            </ul>
+            <h1 class="titulo_invisivel">Desafio 26</h1>
+        </div>
+    </header>
+    <section class="info-car">
+        <aside class="land-rover">
+            <img src="img/land_range_rover.jpg" alt="land rover" width="600" >
+        </aside>
+        <aside class="info-text-car">
+            <h1>LAND ROVER RANGE SPORT <br> 3.0 HSE 4x4 V6 24v<br> TURBO DIESEL 4P AUTOMÁTICO</h1>
+            <p>2020 62.000KM SUV Diesel</p>
+            <h2>R$400.000</h2>
+            <button>Comprar</button>
+        </aside>
+    </section>
+    <section class="description-car">
+        <div>
+            <h1>Descrição</h1>
+            <p>LAND ROVER RANGE SPORT  3.0 HSE <br> 4x4 V6 24v TURBO DIESEL<br> 4P AUTOMÁTICO
+                2020<br> 62.000KM SUV Diesel<br>
+                Garantia de 1 ano <br>
+                Consultar Condições
+        </div>
+        <aside class="aside-description-car">
+            <h1>Marca: Land Rover</h1>
+            <h1>Modelo:Ranger Rover Sport</h1>
+            <h1>Ano:2020</h1>
+            <h1>Transmissão:Automatica</h1>
+            <h1>Condição: Usado</h1>
+            <h1>Blindado: Não</h1>
+            <h1>Quilometragem: 62.000KM</h1>
+            <h1>Tipo de combústivel:Diesel</h1>
+            <h1>Portas: 4 Portas</h1>
+        </aside>
+    </section>
+
+    <section class="financiamento-section">
+        <main>
+        <h1>Veja as parcelas desse veiculo</h1>
+        <form action="">
+            <p>Tudo sem compromisso, vamos começar com alguns dados!</p>
+            <div class="financiamento-dados">
+                <input type="text" placeholder="Nome Completo">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Celular">
+                <input type="text" placeholder="Data de nascimento">
+                <input type="text" placeholder="CPF:">
+                <button>Ver parcelas</button>
+            </div>
+        </form>
+    </main>
+    </section>
+    <section class="section-relacionados">
+        <h1 class="carros-selecionados">Carros Relacionados</h1>
+        <div>
+        <aside class="one-car">
+            <img src="img/jagua.png" alt="" width="400">
+            <h1 class="text-car-relacionados">Jaguar F-Type 2.0</h1>
+            <div>
+            <h2 class="text-car-relacionados">2024</h2>
+            <h2 class="text-car-relacionados">R$580.000</h2>
+        </div>
+        </aside>
+        <aside class="one-car">
+            <img src="img/jagua.png" alt="" width="400">
+            <h1 class="text-car-relacionados">Jaguar F-Type 2.0</h1>
+            <div>
+            <h2 class="text-car-relacionados">2024</h2>
+            <h2 class="text-car-relacionados">R$580.000</h2>
+        </div>
+        </aside>
+    </div>
+    </section>
+<footer>
+    <p>Precisa de ajuda?Clique Aqui!</p>
+</footer>
+</body>
+</html>
